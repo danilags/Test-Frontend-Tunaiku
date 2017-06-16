@@ -54,9 +54,19 @@ li.dropdown {
     padding: 0 10px;
     background: #ccc;
 }
-
+/*
 .baris-kedua {
   padding: 20px 50px;
+}*/
+
+/* baris 3 */
+
+.center-text h1 {
+    text-align: center;
+}
+
+.image-icon, .description {
+    text-align: center;
 }
 
 @media screen and (max-width: 600px){
