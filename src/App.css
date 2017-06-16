@@ -61,12 +61,45 @@ li.dropdown {
 
 /* baris 3 */
 
-.center-text h1 {
+.center-text {
     text-align: center;
+    padding: 10px 157px;
 }
 
 .image-icon, .description {
     text-align: center;
+}
+
+/* baris 4 */
+.baris-empat {
+    background: #ccc;
+}
+
+
+.input-email, .submit-button {
+    padding: 10px;
+}
+
+.form-custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: space-between;
+}
+
+.input-email input {
+    width: 400px;
+    height: 50px;
+    padding: 0 30px;
+    font-size: 22px;
+    background: #fff;
+}
+
+.submit-button input {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 600px){

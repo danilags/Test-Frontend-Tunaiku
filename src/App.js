@@ -8,6 +8,11 @@ import section1a from '../public/section-2-image01.png';
 import section1b from '../public/section-2-image02.png';
 import section1c from '../public/section-2-image03.png';
 
+import facebook from '../public/icon-facebook.png';
+import instagram from '../public/icon-instagram.png';
+import twitter from '../public/icon-twitter.png';
+import youtube from '../public/icon-youtube.png';
+
 import { Container, Row, Col } from 'react-grid-system';
 
 class App extends Component {
@@ -104,6 +109,73 @@ class App extends Component {
               </Col>
             </Row>
           </Container>
+        </div>
+
+        <div className="baris-empat">
+          <Container>
+            <Row className="center-text">
+              <Col md={12}>
+                <h1>Quis nostrum exercitationum ullam corporis
+                    suscipit laborisisasimu, nisi ut aliquid?
+                </h1>
+              </Col>
+            </Row>
+            <Row className="center-form">
+              <Col md={2} />
+              <Col md={8} className="form-custom">
+                <div className="input-email">
+                  <input type="text" placeholder="front-end@tunaiku.com"/>
+                </div>
+                <div className="submit-button">
+                  <input type="submit" value="SEND" />
+                </div>
+              </Col>
+              <Col md={2} />
+            </Row>
+          </Container>
+        </div>
+
+        <div className="footer-wrap">
+          <div className="footer-one">
+            <ul className="navigation">
+              <li>
+                <img src={logo} alt="logo" />
+              </li>
+              <li className="right"><a href="#menu">Menu 4</a></li>
+              <li className="right"><a href="#menu">Menu 3</a>
+              </li>
+              <li className="right"><a href="#menu">Menu 2</a></li>
+              <li className="right"><a href="#menu">Menu 1</a></li>
+            </ul>
+          </div>
+          <div className="footer-two">
+            <ul className="navigation">
+              <li>
+                <p style={{ color: '#fff', width: 300, margin: 0 }}>laboris nisi utaliquip ex ea commodo consequat
+                  irure dolor in reprehenderit in voluptate
+                  dolore eu fugiat nulla pariatur</p>
+              </li>
+              <li className="right"><a href="#menu">
+                <img src={youtube} alt="logo" />
+              </a></li>
+              <li className="right"><a href="#menu">
+                <img src={twitter} alt="logo" />
+              </a></li>
+              <li className="right"><a href="#menu">
+                <img src={instagram} alt="logo" />
+              </a></li>
+              <li className="right"><a href="#menu">
+                <img src={facebook} alt="logo" />
+              </a></li>
+            </ul>
+          </div>
+          <div className="footer-three">
+            <ul className="navigation">
+              <li className="right"><a href="#menu">
+                <p>magnan aliquam quaerat voluptatem. Ut enim</p>
+              </a></li>
+            </ul>
+          </div>
         </div>
       </div>
     );
