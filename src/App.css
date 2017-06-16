@@ -49,6 +49,16 @@ li.dropdown {
     display: block;
 }
 
+.infomation {
+    display: table;
+    padding: 0 10px;
+    background: #ccc;
+}
+
+.baris-kedua {
+  padding: 20px 50px;
+}
+
 @media screen and (max-width: 600px){
     ul.navigation li.right,
     ul.navigation li {float: none;}

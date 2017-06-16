@@ -29,6 +29,30 @@ class App extends Component {
             <li className="right"><a href="#menu">Menu 1</a></li>
           </ul>
         </div>
+
+        <div className="wrap-kedua">
+          <Container>
+            <Row className="baris-kedua">
+              <Col md={6}>
+                <h1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam maximus iaculis commodo.
+                Cras pellentesque cursus ex, ac elementum purus dignissim vitae.
+                </h1>
+                <p>consectetur adipiscing elit.
+                Nullam maximus iaculis commodo.</p>
+                  <div className="infomation">
+                    <p>For More Information</p>
+                  </div>
+              </Col>
+              <Col md={6}>
+                <div>
+                  <img src={section1} alt="money" />
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </div>
     );
   }
