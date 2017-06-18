@@ -1,12 +1,19 @@
+.App {
+  margin: 0px;
+  padding: 0px;
+}
+
 ul.navigation {
     list-style-type: none;
     margin: 0;
-    padding: 20px 50px;
+    padding: 15px 100px;
     overflow: hidden;
-    background-color: #333;
+    background-color: #2d4452;
 }
 
-ul.navigation li {float: left;}
+ul.navigation li {
+    float: left;
+}
 
 ul.navigation li a {
     display: block;
@@ -14,13 +21,21 @@ ul.navigation li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 14px;
 }
 
-ul.navigation li a:hover:not(.active) {background-color: #111;}
+ul.navigation li a:hover {
+    background-color: #293f4c;
+    color: #6fae08;
+}
 
-ul.navigation li a.active {background-color: #4CAF50;}
+ul.navigation li a.active {
+    background-color: #4CAF50;
+}
 
-ul.navigation li.right {float: right;}
+ul.navigation li.right {
+  float: right;
+}
 
 li.dropdown {
     display: inline-block;
@@ -29,21 +44,24 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000;
+    background-color: #8c969c;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    opacity: 0.8
 }
 
 .dropdown-content a {
-    color: black;
+    color: #293f4c;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    color: #fff;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -52,32 +70,83 @@ li.dropdown {
 .infomation {
     display: table;
     padding: 0 10px;
-    background: #ccc;
+    background: #2d4452;
+    color: #fff;
+    border-radius: 10px;
 }
 /*
-.baris-kedua {
-  padding: 20px 50px;
-}*/
+ baris-kedua
+*/
+
+.wrap-image-right {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.image-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrap-image-left, .wrap-image-right {
+    padding: 20px 0px;
+}
+
+.wrap-kedua {
+    background: #f2f2f2;
+    padding: 60px 0;
+}
+
+.infomation p {
+    padding: 0 15px;
+    font-weight: bold;
+}
 
 /* baris 3 */
 
+.baris-ketiga {
+    padding: 35px 0;
+}
+
 .center-text {
     text-align: center;
-    padding: 10px 157px;
+    padding: 10px 157px 70px 157px;
+}
+
+.image-icon {
+  height: 150px;
 }
 
 .image-icon, .description {
     text-align: center;
 }
 
+.description p {
+    font-size: 12px;
+}
+
+.description {
+    padding-bottom: 40px;
+}
+
+.infomation:hover {
+    background: #293f4c;
+    color: #6fae08;
+}
+
 /* baris 4 */
 .baris-empat {
-    background: #ccc;
+    background: #f2f2f2;
+    padding: 60px 0px;
 }
 
 
 .input-email, .submit-button {
     padding: 10px;
+}
+
+.center-text.custom-text-input {
+    padding: 10px 157px 25px 157px;
 }
 
 .form-custom {
@@ -89,23 +158,47 @@ li.dropdown {
 }
 
 .input-email input {
-    width: 400px;
-    height: 50px;
+    width: 335px;
+    height: 60px;
     padding: 0 30px;
     font-size: 22px;
     background: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #a3a3a3;
 }
 
 .submit-button input {
-    width: 120px;
-    height: 50px;
+    width: 130px;
+    height: 60px;
     font-size: 18px;
+    background: #2d4452;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid #2d4452;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px) {
+  .center-text.custom-text-input {
+    padding: 10px 0px 25px 0px;
+  }
+}
+
+@media screen and (max-width: 740px){
     ul.navigation li.right,
     ul.navigation li {float: none;}
     li.dropdown {
       display: block;
     }
+    ul.navigation li {
+    text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+  .center-text {
+    text-align: center;
+    padding: 10px 0 70px 0px;
+  }
 }
