@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-grid-system';
 import logo from '../../../public/logo.png';
 
 import '../../App.css';

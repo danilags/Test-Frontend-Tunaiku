@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-grid-system';
 import '../../App.css';
 
 import facebook from '../../../public/icon-facebook.png';
