@@ -6,7 +6,7 @@ import '../../App.css';
 const FirstFooter = () => (
   <div className="footer-one">
     <ul className="navigation">
-      <li>
+      <li className="logo-footer">
         <img src={logo} alt="logo" />
       </li>
       <li className="right"><a href="#menu">Menu 4</a></li>

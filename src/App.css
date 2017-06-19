@@ -3,16 +3,24 @@
   padding: 0px;
 }
 
+ul.navigation.top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 100px;
+    overflow: hidden;
+    background-color: #2d4452;
+}
+
 ul.navigation {
     list-style-type: none;
     margin: 0;
-    padding: 15px 100px;
+    padding: 16px 100px;
     overflow: hidden;
     background-color: #2d4452;
 }
 
 li.logo-frontend {
-    margin-top: 8px;
+    margin-top: 18px;
     margin-bottom: 0px;
 }
 
@@ -20,11 +28,20 @@ ul.navigation li {
     float: left;
 }
 
+ul.navigation.top li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
 ul.navigation li a {
     display: block;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
     font-size: 14px;
 }
@@ -53,7 +70,7 @@ li.dropdown {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    opacity: 0.8
+    opacity: 0.9;
 }
 
 .dropdown-content a {
@@ -79,6 +96,11 @@ li.dropdown {
     color: #fff;
     border-radius: 10px;
 }
+
+.dropdown-content a:first-child {
+    border-bottom: 1px solid #000;
+}
+
 /*
  baris-kedua
 */
@@ -142,7 +164,7 @@ li.dropdown {
 /* baris 4 */
 .baris-empat {
     background: #f2f2f2;
-    padding: 60px 0px;
+    padding: 65px 0px;
 }
 
 
@@ -152,6 +174,7 @@ li.dropdown {
 
 .center-text.custom-text-input {
     padding: 10px 157px 25px 157px;
+    line-height: 50px;
 }
 
 .form-custom {
@@ -171,6 +194,7 @@ li.dropdown {
     border: 1px solid #fff;
     border-radius: 10px;
     color: #a3a3a3;
+    opacity: 0.5;
 }
 
 .submit-button input {
@@ -205,6 +229,20 @@ li.dropdown {
     margin: 0 auto;
     padding: 10px 0;
   }
+
+  .dropdown:hover .dropdown-content {
+    position: static;
+  }
+
+  ul.navigation.top li a {
+    padding: 16px;
+  }
+
+  li.logo-footer img {
+    padding: 20px 0;
+}
+
+
 }
 
 @media screen and (max-width: 550px) {
